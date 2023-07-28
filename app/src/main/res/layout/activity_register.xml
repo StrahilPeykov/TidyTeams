@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="318dp"
+        android:layout_height="256dp"
+        android:layout_marginBottom="297dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398"
+        app:srcCompat="@drawable/img" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/RegisterButton"
+        android:layout_width="321dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:text="Register"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterPassConfirm" />
+
+    <EditText
+        android:id="@+id/RegisterEmail"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.096"
+        tools:ems="10" />
+
+    <EditText
+        android:id="@+id/RegisterPass"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/RegisterEmail"
+        app:layout_constraintStart_toStartOf="@+id/RegisterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterEmail" />
+
+    <EditText
+        android:id="@+id/RegisterPassConfirm"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/RegisterPass"
+        app:layout_constraintStart_toStartOf="@+id/RegisterPass"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterPass" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="31dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATTENDEE LIST"
+        android:textColor="#215635"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Event name"
+        android:textColor="#00b9c4"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Below, you can see the list of users that signed up for your event."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+<!--    <ListView-->
+<!--        android:id="@+id/attendee_list"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:divider="@android:color/white"-->
+<!--        android:dividerHeight="3dp" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/attendee_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

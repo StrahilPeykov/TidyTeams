@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeUsernameActivity">
+
+    <TextView
+        android:id="@+id/change_username_text"
+        android:layout_width="351dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="68dp"
+        android:gravity="left"
+        android:text="CHANGE USERNAME"
+        android:textColor="#215635"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/change_username_subtext"
+        android:layout_width="363dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="120dp"
+        android:text="You can change your username here by typing a new username and clicking on the button below."
+        android:textColor="#8f8e8e"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="TidyPal123"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_username_text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirm_change_username"
+        android:layout_width="321dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:text="CHANGE USERNAME"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_username"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_username"
+        app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
